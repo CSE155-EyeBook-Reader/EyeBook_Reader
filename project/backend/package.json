@@ -1,0 +1,39 @@
+{
+  "name": "pern-stack-auth-starter-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest -i",
+    "test:app": "jest -i app.test.js"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "config.js",
+      "/tests/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^5.0.0-alpha.8",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.6.0",
+    "prettier": "^2.3.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "jest": "^27.0.6",
+    "lowdb": "^2.1.0",
+    "nodemon": "^2.0.12",
+    "regenerator-runtime": "^0.13.7",
+    "supertest": "^6.1.3"
+  }
+}
