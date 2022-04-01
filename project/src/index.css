@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.login-page-links{
+  display: block;
+  padding: 10px;
+}
+
+.form-labels{
+  padding-right: 30px;
+}
+
+.errordiv {
+  color: red;
+}
