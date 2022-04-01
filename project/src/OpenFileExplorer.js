@@ -1,0 +1,26 @@
+import "./App.css";
+import "./index.css";
+import Login from "./Login";
+import { BrowserRouter as Router, Route, Link, Outlet } from "react-router-dom";
+import React, { Component } from "react";
+
+function readSingleFile(e) {
+    var file = e.target.files[0];
+    if (!file) {
+      return;
+    }
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var contents = e.target.result;
+      displayContents(contents);
+    };
+    reader.readAsText(file);
+  }
+  
+  function displayContents(contents) {
+    var element = document.getElementById('file-content');
+    element.textContent = contents;
+  }
+  
+  document.getElementById('file-input')
+    .addEventListener('change', readSingleFile, false);
